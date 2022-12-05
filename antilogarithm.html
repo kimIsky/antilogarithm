@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html leng="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="./dist/m_antilogarithm.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">        
+        <title>진수 계산기</title>
+        <link rel="shortcut icon" type="image" href="./image/antilogarithm.png">        
+    </head>
+    <body>
+        <div class="main_box">
+            <!--사용 방법 말풍선-->
+            <div class="info_ment mg_a">
+                <div class="box_c">
+                    계산하려는 숫자 및 문자를 입력 후 진수를 선택해 주세요.
+                </div>
+                <div class="tr_c"></div><div class="tr_c mg_c"></div>
+            </div>
+            <div class="info_ment mg_b">
+                <div class="box_c box_clear">
+                    계산하려는 숫자 및 문자를 입력 후 진수를 선택해 주세요.
+                </div>
+                <div class="tr_c box_clear"></div><div class="tr_c mg_c box_clear"></div>
+            </div>
+            <!--A의 시작 및 메인 팝업-->            
+            <section class="mid_box">
+                <div class="total_pop">
+                    <div class="pop_up">A의 입력칸에 큰수를 입력해주세요.</div>
+                    <div class="x_box">X</div>
+                </div>
+            <!--A입력 받고 진수 선택 후 출력-->
+            <!--문서의 시작 A와 B영역 구분-->
+                <div class="back_box">                        
+                    <header class="top_box">
+                        <p class="title_box">A</p>
+                    </header>                             
+                    <article class="val_box">
+                        <input id="save_num1" class="save_num" type="text" value="0">                    
+                        <select name="jin_su" id="select_box1" class="select_box">
+                            <option value="re_a">선택</option>
+                            <option value="10_a">10진수</option>
+                            <option value="2_a">2진수</option>
+                            <option value="8_a">8진수</option>
+                            <option value="16_a">16진수</option>
+                        </select>                    
+                        <p class="name_box">10진수</p><div class="print_area" id="ten_num1"></div>
+                        <p class="name_box">2진수</p><div class="print_area" id="two_num1"></div>
+                        <p class="name_box">8진수</p><div class="print_area" id="et_num1"></div>
+                        <p class="name_box">16진수</p><div class="print_area" id="st_num1"></div>
+                    </article>
+                </div>
+                <!--B입력 받고 진수 선택 후 출력-->
+                <div class="back_box">
+                    <header class="top_box">
+                        <p class="title_box">B</p>
+                    </header>                            
+                    <article class="val_box">
+                        <input id="save_num2" class="save_num" type="text" value="0">                    
+                        <select name="jin_su" id="select_box2" class="select_box">
+                            <option value="re_b">선택</option>                        
+                            <option value="10_b">10진수</option>
+                            <option value="2_b">2진수</option>
+                            <option value="8_b">8진수</option>
+                            <option value="16_b">16진수</option>
+                        </select>
+                        <p class="name_box">10진수</p><div class="print_area" id="ten_num2"></div>
+                        <p class="name_box">2진수</p><div class="print_area" id="two_num2"></div>
+                        <p class="name_box">8진수</p><div class="print_area" id="et_num2"></div>
+                        <p class="name_box">16진수</p><div class="print_area" id="st_num2"></div>                    
+                    </article>
+                </div>    
+            </section>
+            <!--연산 버튼 모음-->            
+            <section class="mid_title">
+                <div id="plus_bt" class="bt_st">+</div>
+                <div id="minus_bt" class="bt_st">-</div>
+                <div id="multi_bt" class="bt_st">x</div>
+            </section>
+            <!--연산 결과 출력-->            
+            <footer class="bottom_box">
+                <p class="name_box">10진수</p><div class="print_area" id="ten_num3"></div>
+                <p class="name_box">2진수</p><div class="print_area" id="two_num3"></div>
+                <p class="name_box">8진수</p><div class="print_area" id="et_num3"></div>
+                <p class="name_box">16진수</p><div class="print_area" id="st_num3"></div>                  
+            </footer>
+        </div>
+        <script src="./jquery/jquery360.min.js"></script>
+        <script src="./antilogarithm.js"></script>
+        <script>
+        </script>
+    </body>
+</html>
